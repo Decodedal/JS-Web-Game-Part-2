@@ -17,10 +17,12 @@ function newItem(url, left, bottom){
         inventory.append(inventoryitem)
     })
 }
-
 let inventory = document.createElement('div')
+function newInventory(){  
+       innerInventory()
+}
 
-function newInventory(){
+function innerInventory(){
     inventory.style.position = 'fixed'
     inventory.style.bottom = '0px';
     inventory.style.left = '0px'
@@ -34,6 +36,7 @@ function newInventory(){
     inventory.style.backgroundColor = 'brown'
     document.body.append(inventory)
 }
+
 
 newInventory()
 newImage('assets/green-character.gif', 100, 250)
